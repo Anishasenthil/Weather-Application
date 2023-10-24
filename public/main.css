@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+        
+        html, body{
+            height: 100%;
+        }
+        
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .d-flex {
+            font-size: medium;
+            font-weight: bolder;
+        }
+        body {
+            background-color: #a5a5b1;
+            display: grid;
+            place-items: center;
+            background-image: url('danger.jpg');
+           background-repeat: no-repeat;
+            background-attachment: fixed;
+             background-size: 100% 100%;
+            
+        }
+        
+        span{
+            font-size: larger;
+            font-weight: bolder;
+        }
+        h1{
+            color: rgb(2, 2, 2);
+        }
+        h2{
+            color: #000000;
+        }
+        .temp-details flex-grow-1 {
+            padding-left: 0%;
+            padding-top: 10%;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 50px;
+            color: #0c0c0d;
+            font-family: 'Marcellus', serif;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+        .card:hover{
+            transform: scale(1.15); 
+        }
+        #heading{
+            font-size: 55px;    
+            color: #000000;
+        }
+        h5{
+            color: rgb(255, 255, 255);
+        }
+        .temp{
+            place-items: center;
+        }
+        form {
+            transition: transform 0.2s; /* Add a 0.2s transition to the 'transform' property */
+            color: rgb(0, 0, 0);
+        }
+
+        form:hover {
+            transform: scale(1.05); /* Scale the form by 5% on hover */
+        }
+        .temp-details > p >span, .grey{
+            color: #a3acc1;
+            font-size: 12px;
+        }
+        
+        .fa{
+            color: #a5a5b1
+        }
+        
+         *:focus{
+            outline: none;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Style for the input */
+        input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Style for the button */
+        button {
+            background-color: #000000;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Add hover effect to the button */
+        button:hover {
+            background-color: #5f6469;
+        }
+        h6{
+         padding-left: 10px;
+         padding-bottom: 20px;
+         font-size: large;
+        }
+        

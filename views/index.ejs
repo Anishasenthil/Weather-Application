@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="main.css"> 
+    <title>Weather</title>
+</head>
+<body>
+    
+       
+    
+    <form action="/" method="post">
+        <h1>Weather Detector</h1>
+         <label for="cityinput">City Name :</label>
+         <input id="cityinput" type="text" name="cityname">
+         <button type="submit" >GO</button>
+      </form>
+      
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-4 col-sm-12 col-xs-12"> 
+                   <div class="card p-4">    
+                    <%  if(locals.data){ %>
+
+                       <div class="d-flex">
+                           <h6 class="flex-grow-1"><%= data.name %> </h6>
+                          <% var today = new Date();  %>
+                          <% var time = today.getHours() + ":" + today.getMinutes() %>
+                           <h6><%= time %></h6>
+                       </div>
+                        
+                       <div class="d-flex flex-column temp mt-5 mb-3">
+                           <h2 class="mb-0 font-weight-bold" id="heading"><%= data.main.temp %>°C</h2>
+                           <h2><span class="small grey" ><%= data.weather[0].description %></span></h2>
+                       </div>
+                       
+                       <div class="d-flex">
+                        
+                           
+                           <div>
+                            <img src="http://openweathermap.org/img/wn/<%= data.weather[0].icon %>@4x.png">
+                           </div>
+                           
+                           
+                       </div>
+                        
+                       <% } %>
+                       <%  if(locals.error) { %>
+                        <%=error%>
+                  
+                      <%   }   %>
+          
+                    </div>
+            </div>
+        </div>
+      <br><br><br><br>
+      <h5>@made with 😍 by ASK</h5>
+    </div>
+
+</body>
+</html>
